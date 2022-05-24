@@ -1,11 +1,15 @@
 module ATU_tb;
-//Set initial variables for angle_tracking_unit.sv
+
+//initial variables
+
 logic [11:0] Q;
 logic RESET, PM, MOTORDIRECTION, OPTOA, OPTOB;
-//Initialize atu
-ATU a1(Q,RESET, PM, MOTORDIRECTION, OPTOA, OPTOB);
 
-/////////////////////////////////////////////////////////////////////////////////
+//Initialize atu
+
+ATU u1(Q,RESET, PM, MOTORDIRECTION, OPTOA, OPTOB);
+
+/////////////////////////////////
 initial begin
 OPTOA = 0;
 OPTOB = 0;
